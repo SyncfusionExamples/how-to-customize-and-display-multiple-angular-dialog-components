@@ -1,0 +1,34 @@
+<div style="height:100%">
+    <ejs-dialog #subscribeDialog height="30%" width="425px" [showCloseIcon]="closeIcon">
+        <ng-template #header>
+            <div class="template">Subscribe to Newsletter</div>
+        </ng-template>
+        <ng-template #content>
+            <div class="dialogContent">
+                <span class="dialogText">Register your email address to receive updates on the latest news.</span>
+            </div>
+        </ng-template>
+        <ng-template #footerTemplate>
+            <div class="dialog-custom-footer">
+                <div class="textbox">
+                    <input #dialogTextbox class="e-input" type="text"  placeholder="Enter your Email Id"/>
+                </div>
+                <div class="footerButton">
+                    <button ejs-button style="height: 30px;" cssClass="e-info"
+                    (click)="subscribeButtonClick($event)">Subscribe</button>
+                </div>
+            </div>
+        </ng-template>  
+    </ejs-dialog>
+    <ejs-dialog #confirmDialog height="200px" width="280px" [showCloseIcon]="closeIcon" 
+    [visible]="ConfirmDialogVisibility" [buttons]="confirmDialogButtons">
+        <ng-template #header>
+            <div class="template">Confirm Subscription</div>
+        </ng-template>
+        <ng-template #content>
+            <div class="dialogContent">
+                <span class="dialogText">Are you sure you want to subscribe to the newsletter?</span>
+            </div>
+        </ng-template>
+    </ejs-dialog>
+</div>
