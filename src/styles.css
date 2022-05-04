@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';  
+
+html,
+body {
+    display: block;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.template {
+    display: inline-block;
+    padding: 8px 0px 0px 10px !important;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 35px;
+}
+.template.e-icons {
+    float: left;
+    position: relative;
+    left: 14%;
+    top: -33px;
+}
+.e-dialog .e-dlg-header-content {
+    padding: 6px;
+}
+
+.e-dialog .e-dlg-header-content .e-btn.e-dlg-closeicon-btn {
+    top: 8px;
+    left: -11px;
+    background-color: transparent;   
+}
+.e-dialog .e-btn .e-btn-icon.e-icon-dlg-close {
+    font-size: 14px;
+}
+.e-dialog .e-dlg-content {
+    padding: 0px !important;
+}
+.dialogContent .dialogText {
+    font-size: 17px;
+    padding: 8% 4% 5% 3%;
+    word-wrap: break-word;
+    border-radius: 6px;
+    text-align: justify;
+    font-style: initial;
+    display: block;
+}
+.dialogContent {
+    padding: 2%;
+    position: relative;
+    font-family: serif;
+}
+.textbox {
+    width: 70%;
+}
+.dialog-custom-footer {
+    display: flex;
+}
+.footerButton {
+    position: relative;
+    padding-left: 22px;
+}
+.e-footer-content .e-input-group {
+    width: 75%;
+    float: left;
+}
+.e-dialog .e-footer-content {
+    padding: 5px 20px 15px 22px !important;
+}
+
+
